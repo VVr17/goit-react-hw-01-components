@@ -5,7 +5,7 @@ export const FriendCard = styled.li`
   justify-content: left;
   align-items: center;
   max-width: 300px;
-  margin: 0 auto 20px auto;
+  margin: 0 auto;
   text-align: center;
   background-color: ${props => props.theme.colors.white};
   padding: ${props => props.theme.spacing(8)};
@@ -13,6 +13,10 @@ export const FriendCard = styled.li`
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   font-size: 24px;
+
+  :not(:last-child) {
+    margin-bottom: 20px;
+  }
 
   span {
     width: 40px;
