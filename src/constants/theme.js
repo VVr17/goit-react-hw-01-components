@@ -7,6 +7,8 @@ export const theme = Object.freeze({
     white: '#ffffff',
     green: '#4caf50',
     red: '#f44336',
+    tableColor: '#ffd300',
+    tableRowColor: '#f8f8f8',
   },
   spacing: value => `${4 * value}px`, 
 });
