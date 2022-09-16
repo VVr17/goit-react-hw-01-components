@@ -15,7 +15,7 @@ export const Card = styled.div`
   flex-direction: column;
 `;
 
-export const UserData = styled.div`
+export const UserInfoContainer = styled.div`
   margin-bottom: 30px;
   width: 100%;
   padding-bottom: 16px;
@@ -25,32 +25,33 @@ export const UserData = styled.div`
     max-width: 100%;
     height: auto;
   }
+`;
 
-  & p:not(:last-child) {
+export const UserInfo = styled.p`
+  :not(:last-child) {
     margin-bottom: 10px;
   }
 
-  & p:nth-of-type(1) {
+  :nth-of-type(1) {
     font-size: 30px;
   }
-`;
-
+`
 export const ProfileStats = styled.ul`
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
   background-color: ${props => props.theme.colors.backgroundListColor};
+`;
 
-  & li {
+export const StatItem = styled.li`
     flex-basis: calc(100% / 3);
     display: flex;
     flex-direction: column;
     padding: ${props => props.theme.spacing(2)};
     border: 1px dotted ${props => props.theme.colors.secondaryGrey};
-  }
 
-  & li span:first-of-type {
+  & span:first-of-type {
     font-size: 20px;
   }
-`;
+`
